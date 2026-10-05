@@ -294,11 +294,11 @@ let blockSave = false
 export function loadDoc(): Doc {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
-    if (!raw) return sampleDoc()
+    if (!raw) return emptyDoc()
     return normalizeDoc(JSON.parse(raw))
   } catch {
     blockSave = true
-    return sampleDoc()
+    return emptyDoc()
   }
 }
 
