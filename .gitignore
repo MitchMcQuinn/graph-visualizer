@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+*.local
+playwright-report
+test-results
+.verify
+
+# Local saved views and configuration
+saved-views/
+*.view.json
+graph-visualizer-doc*.json
+graph-visualizer-views*.json
+.env
+.env.*
